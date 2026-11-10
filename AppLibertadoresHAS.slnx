@@ -1,0 +1,5 @@
+<Solution>
+  <Project Path="AppLibertadoresHAS/AppLibertadoresHAS.csproj">
+    <Deploy Solution="Debug|*" />
+  </Project>
+</Solution>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<Shell
+    x:Class="AppLibertadoresHAS.AppShell"
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:local="clr-namespace:AppLibertadoresHAS"
+    xmlns:partidas="clr-namespace:AppLibertadoresHAS.Views.Partidas"
+    xmlns:usuarios="clr-namespace:AppLibertadoresHAS.Views.Usuarios"
+    Title="AppLibertadoresHAS">
+
+    <ShellContent
+        Title="Home" 
+        ContentTemplate="{DataTemplate local:MainPage}" Route="MainPage" />
+
+    <ShellContent
+        Title="Partidas" 
+        ContentTemplate="{DataTemplate partidas:TabelaView}" Route="tabela" />
+
+    <ShellContent
+        Title="Usuários"
+        ContentTemplate="{DataTemplate usuarios:LocalizacaoView}" Route="usuarios"/>
+</Shell>
